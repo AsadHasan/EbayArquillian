@@ -11,7 +11,6 @@ import PageObjects.Homepage;
 
 public class SearchAutoCompletion {
 	
-	@Drone private WebDriver driver;
 	@Page private Homepage homepage;
 	
 	@Given("^I am on the homepage$")
