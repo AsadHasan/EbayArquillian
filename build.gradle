@@ -11,10 +11,7 @@ apply plugin: 'java'
 
 // In this section you declare where to find the dependencies of your project
 repositories {
-    // Use jcenter for resolving your dependencies.
-    // You can declare any Maven/Ivy/file repository here.
     mavenCentral()
-    jcenter()
 }
 
 dependencies {
@@ -33,4 +30,18 @@ compile group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '3.0.1
 // https://mvnrepository.com/artifact/com.github.igor-suhorukov/chromedriver
 compile group: 'com.github.igor-suhorukov', name: 'chromedriver', version: '2.24'   
 }
+
+buildscript {
+    repositories {
+        jcenter()
+    }
+
+    dependencies {
+        classpath 'org.jboss.arquillian.gradle:arquillian-gradle-plugin:0.1'
+    }
+}
+
+apply plugin: 'arquillian'
+
+
 

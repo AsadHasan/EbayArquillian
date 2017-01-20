@@ -12,11 +12,11 @@ import PageObjects.Homepage;
 public class SearchAutoCompletion {
 	
 	@Drone private WebDriver driver;
-	@Page private Homepage Homepage;
+	@Page private Homepage homepage;
 	
 	@Given("^I am on the homepage$")
 	public void I_am_on_the_homepage(){
-	    
+	    homepage.clicksearchButton();
 	}
 
 	@When("^I type laptop$")
