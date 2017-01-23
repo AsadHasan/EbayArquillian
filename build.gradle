@@ -27,8 +27,10 @@ compile group: 'org.jboss.arquillian.extension', name: 'arquillian-drone-webdriv
 compile group: 'junit', name: 'junit', version: '4.12'
 // https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java
 compile group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '3.0.1'
-// https://mvnrepository.com/artifact/com.github.igor-suhorukov/chromedriver
-compile group: 'com.github.igor-suhorukov', name: 'chromedriver', version: '2.24'   
+// https://mvnrepository.com/artifact/info.cukes/cucumber-junit
+compile group: 'info.cukes', name: 'cucumber-junit', version: '1.2.5'
+// https://mvnrepository.com/artifact/com.github.cukespace/cukespace-parent
+compile group: 'com.github.cukespace', name: 'cukespace-parent', version: '1.6.3'
 }
 
 buildscript {

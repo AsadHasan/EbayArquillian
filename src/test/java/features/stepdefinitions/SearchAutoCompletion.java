@@ -1,8 +1,7 @@
 package features.stepdefinitions;
 
-import org.jboss.arquillian.drone.api.annotation.Drone;
+
 import org.jboss.arquillian.graphene.page.Page;
-import org.openqa.selenium.WebDriver;
 
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;

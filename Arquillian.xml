@@ -7,5 +7,12 @@
         <property name="browser">${browser}</property>
     </extension>
     <!-- clip -->
+    
+    <extension qualifier="cucumber">
+    <property name="report">true</property>
+    <property name="reportDirectory">target/cucumber-report</property>
+    <property name="featureHome">src/test/java/features</property>
+    <property name="tempDir">target/custom/features</property>
+</extension>
 
 </arquillian>
